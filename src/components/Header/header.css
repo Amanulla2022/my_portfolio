@@ -1,4 +1,6 @@
 .header {
+  /* this one background becouse for skills header background is displayed so set it to rgb(40,40,40) */
+  background: rgb(40, 40, 40);
   height: 5rem;
   width: 100vw;
   max-width: 75rem;

@@ -11,8 +11,8 @@ const Header = () => {
       <div className="desktopMenu">
         <Link className="desktopMenuListItem">Home</Link>
         <Link className="desktopMenuListItem">About</Link>
+        <Link className="desktopMenuListItem">Experience</Link>
         <Link className="desktopMenuListItem">Portfolio</Link>
-        <Link className="desktopMenuListItem">Client</Link>
       </div>
       <button className="desktopMenuBtn">
         <img src={cantactImg} alt="" className="desktopMenuImg" />
