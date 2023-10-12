@@ -1,10 +1,15 @@
 #expSection {
-  height: calc(100vh - 4rem);
-  width: 100vw;
-  max-width: 75rem;
+  
   margin: 0 auto;
-  overflow: hidden;
-  position: relative;
+  min-height: calc(100vh - 4rem);
+  width: 100vw;
+  max-width: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 .expContainer {
@@ -47,4 +52,13 @@ li {
   color: blue;
   padding-bottom: 0.75rem;
   border-bottom: 3px solid blue;
+}
+
+@media screen and (max-width:600px) {
+  #expSection {
+      width: 60vw;
+  }
+  .expContainer {
+    height: auto;
+  }
 }

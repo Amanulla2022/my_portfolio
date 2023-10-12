@@ -55,3 +55,46 @@
   width: 1rem;
   margin: 1rem;
 }
+
+.active {
+  color: yellowgreen;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellowgreen;
+}
+
+.mobileMenu {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-height: 15rem;
+  background: rgb(50,50,50);
+}
+
+.mobileMenuImg {
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+
+.mobileMenuListItem {
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(40, 40, 40);
+}
+
+/* * media wuerry for hamBurger */
+@media screen and (max-width:600px){
+.mobileMenuImg {
+  display: flex;
+} .desktopMenu {
+  display: none;
+} .desktopMenuBtn {
+  display: none;
+}
+}
