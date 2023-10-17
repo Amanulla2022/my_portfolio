@@ -1,14 +1,20 @@
 import React from "react";
 import "./experience.css";
 import sapientLogo from "../../assets/sapientLogo.png";
+import { openSocialMedia } from "../functionality";
 
 const Experience = () => {
   return (
     <section className="expSection">
       <div className="expContainer">
         <h1>
-          EXPERIENCE IN{" "}
-          <img src={sapientLogo} alt="Publicis-Sapient" id="sapientImg"></img>
+          EXPERIENCE IN
+          <img
+            src={sapientLogo}
+            alt="Publicis-Sapient"
+            id="sapientImg"
+            onClick={() => openSocialMedia("sapient")}
+          ></img>
         </h1>
 
         <div className="individualContainer">

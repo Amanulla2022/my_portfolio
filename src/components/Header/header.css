@@ -16,8 +16,8 @@
 
 .logo {
   object-fit: cover;
-  height: 3rem;
-  width: 4rem;
+  height: 6rem;
+  width: 6rem;
   border-radius: 2rem;
   background-color: rgb(40, 40, 40);
 }
@@ -72,7 +72,7 @@
   padding: 0.5rem;
   height: fit-content;
   min-height: 15rem;
-  background: rgb(50,50,50);
+  background: rgb(50, 50, 50);
 }
 
 .mobileMenuImg {
@@ -89,12 +89,14 @@
 }
 
 /* * media wuerry for hamBurger */
-@media screen and (max-width:600px){
-.mobileMenuImg {
-  display: flex;
-} .desktopMenu {
-  display: none;
-} .desktopMenuBtn {
-  display: none;
-}
+@media screen and (max-width: 600px) {
+  .mobileMenuImg {
+    display: flex;
+  }
+  .desktopMenu {
+    display: none;
+  }
+  .desktopMenuBtn {
+    display: none;
+  }
 }

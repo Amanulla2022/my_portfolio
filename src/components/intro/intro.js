@@ -4,6 +4,7 @@ import bg from "../../assets/my_image.jpeg";
 import btnImg from "../../assets/hireme.png";
 import dowbtnImg from "../../assets/d.png";
 import { Link } from "react-scroll";
+import { handleDownload, scrollToContactInfo } from "../functionality";
 
 const Intro = () => {
   return (
@@ -11,7 +12,7 @@ const Intro = () => {
       <div className="introContent">
         <span className="hello">Hello,</span>
         <span className="introText">
-          I'm <span className="introName">Amanulla</span> <br /> Front-end
+          I'm <span className="introName">Amanulla Mulla</span> <br /> Front-end
           Developer
         </span>
         <p className="introPara">
@@ -19,11 +20,11 @@ const Intro = () => {
           visually appealing, responsive and user freindly website.
         </p>
         <Link>
-          <button className="btn">
+          <button className="btn" onClick={scrollToContactInfo}>
             <img src={btnImg} alt="hire" className="btnImg" />
             Hire Me
           </button>
-          <button className="btn" id="btn2">
+          <button className="btn" id="btn2" onClick={handleDownload}>
             <img src={dowbtnImg} alt="hire" className="btnImg" id="dowBtn" />
             Resume
           </button>
